@@ -1,0 +1,49 @@
+@import "./sass/lib/variables";
+
+*{
+    color: white;
+}
+body{
+    background-color: black;
+}
+.flex-navbar img{
+    width: auto;
+    height: 15vh;
+    border-radius: $radius;
+}
+.navbar{
+    background-color:rgba(255, 253, 253, 0.9);
+    padding: 28px;
+}
+.flex-navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    list-style: none;
+    padding: 10px 20px;
+}
+.enlace{
+    text-decoration: none;
+    font-size: 16px;
+    color: #424242;
+    overflow: hidden;
+    /*demora de hover*/
+    transition: all .3s ease-in-out;
+}
+.enlace:hover{
+    border-bottom: 2px solid orangered;
+    padding-bottom: 6px;
+    background-color: transparent;
+    color:orangered;
+}
+.active{
+    background-color: #5f292bc5;
+    padding: 10px 30px;
+    color: white;
+}
