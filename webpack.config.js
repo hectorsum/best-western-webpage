@@ -24,6 +24,10 @@ module.exports = {
                     }]
             },
             {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
+            {
                 test: /\.(gif|png|jpe?g|svg)$/,
                 use: [
                     {
@@ -35,7 +39,7 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },            
         ]
     },
     plugins:[
@@ -44,6 +48,6 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'bundle.css' //Output
-        })
+        }),
     ]
 }

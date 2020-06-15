@@ -31,7 +31,7 @@ $font-dir: "../fonts";
  * Constant layout values, apart from these we can also declare values
  * for different blocks sizes and more.
  */
-$baselineheight: 1.5;
+$baselineheight: 2;
 $gutterwidth: 24px;
 $minigutter: $gutterwidth / 2;
 $pagemaxwidth: 768px;
@@ -100,7 +100,7 @@ $size-vars: ("x-small" : .6,
  * Brand colors
  */
 
-$color-brand: #ea83ee;
+$color-brand: #848484;
 $color-secondary: rgb(219, 216, 121);
 /**
     * Grey Scale
@@ -219,7 +219,7 @@ $placeholdercolor : $lightergrey;
 // Navegación
 $nav-width: 42px;
 $nav-height: $nav-width;
-$nav-icon-size: 16px;
+$nav-icon-size: 20px;
 $nav-color: $color-brand;
 $nav-background: $white;
 $nav-borders: lighten($nav-background, 10%);

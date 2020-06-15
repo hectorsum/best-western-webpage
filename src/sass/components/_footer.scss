@@ -1,0 +1,67 @@
+/*ESTILOS FOOTER*/
+.footer {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio {
+    color: #ffffff;
+}
+
+.servicio h5 {
+    color: yellow;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.servicio .nav-servicio {
+    display: block;
+    list-style: none;
+}
+
+.servicio .nav-servicio .item-footer {
+    margin-bottom: 10px;
+}
+
+.servicio .contacto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.servicio .contacto img {
+    width: 30px;
+    height: 30px;
+}
+
+.servicio .contacto .direccion-contacto {
+    color: #ffffff;
+}
+
+.servicio .contacto .direccion-contacto:hover {
+    color: yellow;
+}
+
+.servicio .contacto p {
+    margin-left: 10px;
+    /*empuja de izquierda a derecja*/
+}
+
+.derechos-reservados {
+    padding: 30px;
+    background-color: rgba(245, 17, 17, 0.5);
+}
+
+.msj-derechos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 1;
+}
