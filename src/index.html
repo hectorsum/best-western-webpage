@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="../css/styles.css"> -->
     <!-- <link rel="stylesheet" href="styles.scss"> -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <!-- HOME -->
     <!--Navbar-->
-    <nav class="navbar">
-        <div class="container">
-            <div class="flex-navbar">
-                
-                <img src="img/logo.svg" alt="Logo image">
-                
-                <ul class="navigation">
-                    <li class="item"><a class="enlace active" href="#/">Inicio</a></li>
-                    <li class="item"><a class="enlace" href="#/nosotros">Nosotros</a></li>
-                    <li class="item"><a class="enlace" href="#/habitaciones">Habitaciones</a></li>
-                    <li class="item"><a class="enlace" href="#/servicios">Servicios</a></li>
-                    <li class="item"><a class="enlace" href="#/contactos">Contactos</a></li>
-                </ul>
-            </div>
+    <!-- <div class="fullscreen-background"> -->
+    <header>
+        <div class="video--wrapper">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="flex-navbar">
+
+                        <img src="img/logo3.svg" alt="Logo image">
+
+                        <ul class="navigation">
+                            <li class="item"><a class="enlace active" href="#/">Inicio</a></li>
+                            <li class="item"><a class="enlace" href="#/nosotros">Nosotros</a></li>
+                            <li class="item"><a class="enlace" href="#/habitaciones">Habitaciones</a></li>
+                            <li class="item"><a class="enlace" href="#/servicios">Servicios</a></li>
+                            <li class="item"><a class="enlace" href="#contacto  ">Contactos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <article class="home--paragraph">
+                <div class="home--paragraph--text">
+                    <h1>Best Place</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore! Ullam unde
+                        laudantium praesentium, modi sit at earum totam fuga amet possimus asperiores quia pariatur
+                        fugiat.
+                        Sunt similique id cumque.</p>
+                </div>
+            </article>
+            <video muted autoplay loop id="background-video">
+                <source src="./video/video.mp4" type="video/mp4">
+            </video>
         </div>
-    </nav>
-    
-    <div class="container">
-        <section id="root">
+    </header>
+    <!-- </div> -->
+
+    <main>
+        <section class="bienvenidos">
+            <div class="mensaje">
+                <h1>Welcome</h1>
+                <h2>Hotel El Paraiso</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum repellendus porro aperiam similique iure maiores tempore. Laborum, consequatur animi!
+                    Dolore id quos enim porro sapiente iste deleniti voluptatibus quis rerum?
+                </p>
+            </div>
         </section>
-    </div>
+    </main>
 
     <!--pie de pagina o footer-->
-    <footer class="footer">
+    <footer class="footer" id="contacto">
         <div class="container">
             <div class="flex-footer margin_top_bottom">
                 <div class="servicio">
@@ -103,7 +131,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 
 </html>

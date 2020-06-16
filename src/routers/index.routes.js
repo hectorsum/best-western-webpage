@@ -15,9 +15,6 @@ const router = async (route) =>{
             return console.log('habitaciones')
         case '#/servicios':
             return console.log('servicios')
-        case '#/contactos':
-            content.appendChild(await pages.contacto())
-            break
         default:
             content.appendChild(pages.notfound())
             break;
