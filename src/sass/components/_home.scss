@@ -16,7 +16,7 @@ header{
         background: transparent;
         padding: 0px;
         position: absolute;
-        position: fixed;
+        position: fixed; //sticky navbar
         top: 0;
         z-index: 1;
         width: 100%;
@@ -64,16 +64,15 @@ header{
         position: absolute;
         border-radius: $radius;
         background-color: rgba(0, 0, 0, 0.5);
-        width: auto;
         height: 600px;
         color: white;
-        width: 400px;
+        width: 400px; //size
         height: 500px;
         float: right;
-        right: 200px;
-        margin-top: 20%;
+        right: 840px; //Position to text's box
+        margin-top: 15%;
         &--text{    
-            //position: absolute;        
+            position: absolute;        
             text-align: center;
             margin: 10% 10% 5% 10%;
             font-size: 20px;
@@ -87,7 +86,7 @@ header{
 
 .nav-scrolled{
     & .navbar{
-        background-color: grey;
+        background-color: rgba(0, 0, 0, 0.7);
         box-shadow: 0 3px 20px rgba(black,0.2);
     }
 }
