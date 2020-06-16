@@ -1,0 +1,42 @@
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 50px;
+}
+
+.servicios img {
+    //object-fit: cover;
+    height: 380px;
+}
+
+.servicio-enlace {
+  // text-decoration: none;
+}
+
+.descrip-servicio {
+    position: absolute;
+    width: 44.7%;
+    height: auto;
+    background-color: rgba(245, 17, 17, 0.5);
+    /*position*/
+    //top: 0;
+    text-align: center;
+}
+
+/*rrellene  a cada uno 50px arriba*/
+.title-servicio,
+.pf-servicio {    
+    padding-top: 10px;
+    color: #ffffff;
+}
+
+.container .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span {
+    color: hsl(61, 84%, 53%);
+    font-size: 20px;
+    font-weight: bold;
+}
