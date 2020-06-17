@@ -1,49 +1,51 @@
-.grid-servicios {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-gap: 50px;
+.services-tittle {
+  text-align: center;
+  font-size: 35px;
 }
-.services-tittle{
-    text-align: center;
-}
-.servicios img {
-    
-    height: 380px;
+.servicios{
+  & img{
+    height: 380px; //Size of every element of grid
+    width: 600px;
+    border-radius: $radius;
+  }
 }
 
 .descrip-servicio {
-    position: absolute;
-    // height: auto;
-    background-color: rgba(245, 17, 17, 0.5);
-    /*position*/
-    //top: 0;
-    border-radius: $radius;
-    text-align: center;
+  height: 380px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $radius;
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: transparent;
+  font-weight: 700;
 }
 
-/*rrellene  a cada uno 50px arriba*/
-.title-servicio,
-.pf-servicio {    
-    padding-top: 10px;
-    color: #ffffff;
+.darken--description {
+  color: white;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.container--services{
+
+.container--services {
+  display: grid;
+  align-items: center; //Center items horizontally and vertically
+  justify-content: center;
+  // 4 grid elements
+  grid-template-columns: 600px 600px; //2 columns
+  grid-template-rows: auto auto; //2 rows
+  row-gap: 50px;
+  column-gap: 50px;
+  padding-bottom: 70px;
+
+  & img {
+    //To fill size of img according to grid element's size
     display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 600px 600px;
-    grid-template-rows: auto auto;
-    row-gap: 50px;
-    column-gap: 50px;
-    & *{ //To fill all content to size of grid element
-      display: grid;
-      justify-items: stretch;
-      align-items: stretch;
-    }
-}
-span {
-    color: hsl(61, 84%, 53%);
-    font-size: 20px;
-    font-weight: bold;
+    justify-items: stretch;
+    align-items: stretch;
+  }
 }
