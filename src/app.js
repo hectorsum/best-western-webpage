@@ -11,7 +11,7 @@ import "./img/cafe.jpg";
 import "./img/lavanderia.jpg";
 import "./img/telefono.jpg";
 import "./img/wifi.jpg";
-
+import "./img/matromonial.jpg";
 
 
 
@@ -24,6 +24,7 @@ const sectionOneOptions = {
     rootMargin: "-100px 0px 0px 0px"
 }
 
+//Nav animation
 const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver){
     entries.forEach(entry => {
         if(!entry.isIntersecting){
@@ -44,3 +45,17 @@ $('.navigation .item .enlace').on('click', function () {
     $('.enlace').removeClass('active')
     $(this).addClass('active')
 })
+
+
+const portfolioItems = document.getElementsByClassName('descrip-servicio')
+    Object.keys(portfolioItems).forEach(elem =>{
+        portfolioItems[elem].addEventListener('mouseover',() => {
+          portfolioItems[elem].classList.add('darken--description');
+        })
+        portfolioItems[elem].addEventListener('mouseout',() => {
+          portfolioItems[elem].classList.remove('darken--description');
+        })
+})
+
+
+

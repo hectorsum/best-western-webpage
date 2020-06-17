@@ -1,0 +1,32 @@
+
+.rooms{
+  background-color: white;
+}
+.bedroom-tittle{
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  font-weight: bolder;
+  background-color: #cdcdcd;
+}
+.bed-items{ //Aligning nav items
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 8px 300px;
+  padding: 0px;
+  list-style: none; //Remove bullet point (viñeta)
+  & li a{
+    text-decoration: none;
+  }
+}
+.bedroom-content{
+  padding: 0 0px; //top-bottom && left-right
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
