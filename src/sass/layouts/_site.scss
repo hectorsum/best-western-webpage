@@ -46,6 +46,17 @@ body {
 main{
   background-color: #EFEFEF;
 }
+//todo:Scroll bar body
+body::-webkit-scrollbar{
+  width: 2px;
+}
+body::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #464646;
+}
+
 
 /**
 * A partir de aquí es donde debes escribir los estilos de posicionamiento

@@ -24,7 +24,7 @@ const sectionOneOptions = {
     rootMargin: "-100px 0px 0px 0px"
 }
 
-//Nav animation
+//todo: Nav animation
 const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver){
     entries.forEach(entry => {
         if(!entry.isIntersecting){
@@ -40,13 +40,32 @@ sectionOneOptions);
 sectionOneObserver.observe(header);
 
 
-//Nav var animation ul
+//todo: Nav bar animation ul HOME
 $('.navigation .item .enlace').on('click', function () {
     $('.enlace').removeClass('active')
     $(this).addClass('active')
 })
 
+//todo: Bedrooms animation (zooming photo)
+$('div .bedroom-content img').on('mouseenter',function(){
+  console.log('aumentando')
+  $(this).animate({'width':'100%'},200);
+})
+$('div .bedroom-content img').on('mouseleave',function(){
+  console.log('aumentando')
+  $(this).animate({'width':'100%'},200);
+})
 
+//todo: Bedrooms animation (ul tag zooming)
+// $('.bed-items li').on('mouseenter',function(){
+//   $(this).animate({'font-size':'18px','left':'0','top':'0'},100).fadeIn(200)
+// })
+// $('.bed-items li').on('mouseleave',function(){
+//   $(this).animate({'font-size':'16px'},100).fadeIn(200)
+// })
+
+
+//todo: services animation
 const portfolioItems = document.getElementsByClassName('descrip-servicio')
     Object.keys(portfolioItems).forEach(elem =>{
         portfolioItems[elem].addEventListener('mouseover',() => {

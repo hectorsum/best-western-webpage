@@ -1,32 +1,86 @@
-
-.rooms{
+.rooms {
   background-color: white;
 }
-.bedroom-tittle{
+
+.bedroom-tittle {
   text-align: center;
   color: black;
   font-size: 35px;
   font-weight: bolder;
-  background-color: #cdcdcd;
-}
-.bed-items{ //Aligning nav items
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 8px 300px;
-  padding: 0px;
-  list-style: none; //Remove bullet point (viñeta)
-  & li a{
-    text-decoration: none;
-  }
-}
-.bedroom-content{
-  padding: 0 0px; //top-bottom && left-right
-  background-color: black;
-  color: white;
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 10px;
+  background-color: #67757C;
+  margin-bottom: -8px;
 }
 
+.navwrapper {
+  ul li {
+    padding: 25px;
+    height: 100%;
+    min-width: 50%;
+  }
+}
+
+.bedroom-nav {
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+.bed-items {
+  //Aligning nav items
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  list-style: none; //Remove bullet point (viñeta)
+  padding: 0px;
+
+  & li {
+    cursor: pointer;
+    & a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  & .bed-item {
+    //padding: 10px 70px; //Top&&bottom - left&&right
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-weight: bolder;
+    background-color: #cdcdcd;
+  }
+
+  & .bed-item:hover {
+    transition: all .3s ease-in-out;
+    background-color: #FEAD3B;
+  }
+}
+
+.active-item {
+  background-color: #FEAD3B;
+}
+
+
+.bedroom-content {
+  margin-top: -8px;
+  background-color: #F6E894;
+  color: black;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  justify-content: center;
+  align-items: center;
+
+  & .bedroom-photo {
+    & img {
+      display: flex; //To fill img to div size
+      height: 100%;
+      width: 100%;
+      align-items: stretch;
+      justify-content: stretch;
+    }
+  }
+
+  & .bedroom-description {
+    margin: 25px;
+    text-align: center;
+  }
+}
