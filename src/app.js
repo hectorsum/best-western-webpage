@@ -12,6 +12,13 @@ import "./img/lavanderia.jpg";
 import "./img/telefono.jpg";
 import "./img/wifi.jpg";
 import "./img/matromonial.jpg";
+import "./img/individual-room.jpeg";
+import "./img/double-room.jpg";
+import "./img/triple-room.jpg";
+import "./img/quad-room.jpg";
+import "./img/twin-room.jpg";
+import "./img/queen-room.jpg";
+import "./img/king-room.jpg";
 
 
 
@@ -23,7 +30,6 @@ const sectionOneOptions = {
     //Adding some margin to my navbar so that applies the effect before hits .bienvenidos div
     rootMargin: "-100px 0px 0px 0px"
 }
-
 //todo: Nav animation
 const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver){
     entries.forEach(entry => {
@@ -47,14 +53,14 @@ $('.navigation .item .enlace').on('click', function () {
 })
 
 //todo: Bedrooms animation (zooming photo)
-$('div .bedroom-content img').on('mouseenter',function(){
-  console.log('aumentando')
-  $(this).animate({'width':'100%'},200);
-})
-$('div .bedroom-content img').on('mouseleave',function(){
-  console.log('aumentando')
-  $(this).animate({'width':'100%'},200);
-})
+// $('div .bedroom-content img').on('mouseenter',function(){
+//   console.log('aumentando')
+//   $(this).animate({'width':'100%'},200);
+// })
+// $('div .bedroom-content img').on('mouseleave',function(){
+//   console.log('aumentando')
+//   $(this).animate({'width':'100%'},200);
+// })
 
 //todo: Bedrooms animation (ul tag zooming)
 // $('.bed-items li').on('mouseenter',function(){
@@ -63,7 +69,6 @@ $('div .bedroom-content img').on('mouseleave',function(){
 // $('.bed-items li').on('mouseleave',function(){
 //   $(this).animate({'font-size':'16px'},100).fadeIn(200)
 // })
-
 
 //todo: services animation
 const portfolioItems = document.getElementsByClassName('descrip-servicio')
@@ -76,5 +81,23 @@ const portfolioItems = document.getElementsByClassName('descrip-servicio')
         })
 })
 
+$('.bedroom-nav a').on('click',function(){
+  $('.bedroom-nav a').removeClass('active-item');
+  $(this).addClass('active-item');
+})
 
+// Animation hotel rooms
+$(function(){
+  //Removing class hide, so its showing first element
+  $('.content-info-array .content-info').show()
+
+  $('.bed-items li a').on('click',function(){
+    $('.content-info-array .content-info').hide()
+    var enlace = $(this).attr('href');
+    $(enlace).removeClass('hide-panel');
+    $(enlace).show();
+    
+    return false //Not to load again the page after click on a tag
+  })
+})
 

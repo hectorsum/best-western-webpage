@@ -1,57 +1,112 @@
-.rooms {
-  background-color: white;
-}
-
 .bedroom-tittle {
   text-align: center;
   color: black;
   font-size: 35px;
   font-weight: bolder;
   background-color: #67757C;
-  margin-bottom: -8px;
 }
 
-.navwrapper {
-  ul li {
-    padding: 25px;
-    height: 100%;
-    min-width: 50%;
-  }
-}
 
-.bedroom-nav {
-  height: 100%;
+.bedroom-content {
+  // background-color: #F6E894;
+  color: black;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 20em;
   max-height: 100%;
-  min-height: 100%;
-}
 
-.bed-items {
-  //Aligning nav items
-  display: flex;
-  flex-direction: column;
-  background-color: red;
-  list-style: none; //Remove bullet point (viñeta)
-  padding: 0px;
+  //Nav content
+  & .bedroom-nav {
+    height: 20em;
+    max-height: 100%;
+    margin-left: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(26, 27, 26, 0.452);
 
-  & li {
-    cursor: pointer;
-    & a {
-      text-decoration: none;
-      color: black;
+    & * {
+      height: 100%;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px; //width from scrollbar
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: black //background from scrollbar only
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: orange; //background from scrollbar
+    }
+
+    & .navwrapper {
+      // background-color: green;
+      margin-top: -1em; //To fit the nav inside of bedroom-nav
+
+      & .bed-items {
+        //Aligning nav items
+        display: flex;
+        flex-direction: column;
+        // background-color: red;
+        list-style: none; //Remove bullet point (viñeta)
+        padding: 0px;
+
+        & li {
+          cursor: pointer;
+          text-align: center;
+          min-height: 10%; //Min height of every li element       
+
+          & a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        & .bed-item {
+          text-align: center;
+          font-weight: bolder;
+          background-color: #cdcdcd;
+          // border: 1px solid black;
+
+          & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        & .bed-item:hover {
+          transition: all .3s ease-in-out;
+          background-color: #FEAD3B;
+        }
+      }
     }
   }
 
-  & .bed-item {
-    //padding: 10px 70px; //Top&&bottom - left&&right
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    font-weight: bolder;
-    background-color: #cdcdcd;
+  & .content-info-array{
+    display: flex;
+    flex-direction: column;
   }
 
-  & .bed-item:hover {
-    transition: all .3s ease-in-out;
-    background-color: #FEAD3B;
+  & .content-info {
+    display: flex;
+    flex-direction: row;
+    
+    //PHOTO CONTENT
+    & .bedroom-photo {
+      & img {
+        height: 20em;
+        width: 100%;
+      }
+    }
+    //DESCRIPTION CONTENT
+    & .bedroom-details {
+      background-color: #F6E894;
+      text-align: center;
+      width: 100%;
+      height: 20em;
+    }
   }
 }
 
@@ -59,28 +114,6 @@
   background-color: #FEAD3B;
 }
 
-
-.bedroom-content {
-  margin-top: -8px;
-  background-color: #F6E894;
-  color: black;
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-  justify-content: center;
-  align-items: center;
-
-  & .bedroom-photo {
-    & img {
-      display: flex; //To fill img to div size
-      height: 100%;
-      width: 100%;
-      align-items: stretch;
-      justify-content: stretch;
-    }
-  }
-
-  & .bedroom-description {
-    margin: 25px;
-    text-align: center;
-  }
+.hide-panel{
+  visibility: hidden;
 }
