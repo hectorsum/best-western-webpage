@@ -1,6 +1,6 @@
 .services-tittle {
   text-align: center;
-  font-size: 35px;
+  font-size: 35px;  
 }
 .servicios{
   & img{
@@ -22,6 +22,7 @@
   font-size: 25px;
   color: transparent;
   font-weight: 700;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 .darken--description {
@@ -41,7 +42,7 @@
   row-gap: 50px;
   column-gap: 50px;
   padding-bottom: 70px;
-
+  
   & img {
     //To fill size of img according to grid element's size
     display: grid;

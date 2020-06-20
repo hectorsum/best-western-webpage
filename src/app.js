@@ -20,7 +20,9 @@ import "./img/twin-room.jpg";
 import "./img/queen-room.jpg";
 import "./img/king-room.jpg";
 
-
+import "./img/client-quantity.svg";
+import "./img/bed-quantity.svg";
+import "./img/telephone.svg";
 
 const header = document.querySelector("header");
 const main = document.querySelector(".bienvenidos");
@@ -95,7 +97,7 @@ $(function(){
     $('.content-info-array .content-info').hide()
     var enlace = $(this).attr('href');
     $(enlace).removeClass('hide-panel');
-    $(enlace).show();
+    $(enlace).show(200);
     
     return false //Not to load again the page after click on a tag
   })

@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
   <!-- <link rel="stylesheet" href="../css/styles.css"> -->
   <!-- <link rel="stylesheet" href="styles.scss"> -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -22,11 +24,11 @@
             <img src="img/logo.svg" alt="Logo image">
 
             <ul class="navigation">
-              <li class="item"><a class="enlace active" href="#inicio">Inicio</a></li>
-              <li class="item"><a class="enlace" href="#nosotros">Nosotros</a></li>
-              <li class="item"><a class="enlace" href="#habitaciones">Habitaciones</a></li>
-              <li class="item"><a class="enlace" href="#servicios">Servicios</a></li>
-              <li class="item"><a class="enlace" href="#contacto">Contactos</a></li>
+              <li class="item"><a class="enlace active" href="#inicio">Home</a></li>
+              <li class="item"><a class="enlace" href="#nosotros">About</a></li>
+              <li class="item"><a class="enlace" href="#habitaciones">Rooms</a></li>
+              <li class="item"><a class="enlace" href="#servicios">Services</a></li>
+              <li class="item"><a class="enlace" href="#contacto">Contacts</a></li>
             </ul>
           </div>
         </div>
@@ -59,105 +61,140 @@
 
     <div class="rooms">
       <div class="bedroom-tittle">
-        Our Bed rooms
+        Our rooms
       </div>
 
-      
-        <div class="bedroom-content">
-          <div class="bedroom-nav">
-            <nav class="navwrapper">
-              <ul class="bed-items">
-                <li class="bed-item"><a href="#individual" class="active-item">Individual</a></li>
-                <li class="bed-item"><a href="#double">Double</a></li>
-                <li class="bed-item"><a href="#triple">Triple</a></li>
-                <li class="bed-item"><a href="#quad">Quad</a></li>
-                <li class="bed-item"><a href="#twin">Twin</a></li>
-                <li class="bed-item"><a href="#queen">Queen</a></li>
-                <li class="bed-item"><a href="#king">King</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="content-info-array">
-            <div class="content-info" id="individual">
-              <div class="bedroom-photo">
-                <img src="../src/img/individual-room.jpeg" alt="">
-              </div>
-              <div class="bedroom-details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
-                  sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
-                  accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
-                  modi. Veniam, quis consectetur! Error, blanditiis.</p>
-              </div>
-            </div>
-            <div class="content-info hide-panel" id="double">
-              <div class="bedroom-photo">
-                <img src="../src/img/double-room.jpg" alt="">
-              </div>
-              <div class="bedroom-details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
-                  sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
-                  accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
-                  modi. Veniam, quis consectetur! Error, blanditiis.</p>
-              </div>
-            </div>
-            <div class="content-info hide-panel" id="triple">
-              <div class="bedroom-photo">
-                <img src="../src/img/triple-room.jpg" alt="">
-              </div>
-              <div class="bedroom-details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
-                  sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
-                  accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
-                  modi. Veniam, quis consectetur! Error, blanditiis.</p>
-              </div>
-            </div>
-            <div class="content-info hide-panel" id="quad">
-              <div class="bedroom-photo">
-                <img src="../src/img/quad-room.jpg" alt="">
-              </div>
-              <div class="bedroom-details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
-                  sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
-                  accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
-                  modi. Veniam, quis consectetur! Error, blanditiis.</p>
-              </div>
-            </div>
-            <div class="content-info hide-panel" id="twin">
-              <div class="bedroom-photo">
-                <img src="../src/img/twin-room.jpg" alt="">
-              </div>
-              <div class="bedroom-details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
-                  sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
-                  accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
-                  modi. Veniam, quis consectetur! Error, blanditiis.</p>
-              </div>
-            </div>
-            <div class="content-info hide-panel" id="queen">
-              <div class="bedroom-photo">
-                <img src="../src/img/queen-room.jpg" alt="">
-              </div>
-              <div class="bedroom-details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
-                  sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
-                  accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
-                  modi. Veniam, quis consectetur! Error, blanditiis.</p>
-              </div>
-            </div>
-            <div class="content-info hide-panel" id="king">
-              <div class="bedroom-photo">
-                <img src="../src/img/king-room.jpg" alt="">
-              </div>
-              <div class="bedroom-details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
-                  sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
-                  accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
-                  modi. Veniam, quis consectetur! Error, blanditiis.</p>
-              </div>
-            </div>
 
-          </div>
+      <div class="bedroom-content">
+        <div class="bedroom-nav">
+          <nav class="navwrapper">
+            <ul class="bed-items">
+              <li class="bed-item"><a href="#individual" class="active-item">Individual</a></li>
+              <li class="bed-item"><a href="#double">Double</a></li>
+              <li class="bed-item"><a href="#triple">Triple</a></li>
+              <li class="bed-item"><a href="#quad">Quad</a></li>
+              <li class="bed-item"><a href="#twin">Twin</a></li>
+              <li class="bed-item"><a href="#queen">Queen</a></li>
+              <li class="bed-item"><a href="#king">King</a></li>
+            </ul>
+          </nav>
         </div>
+        <div class="content-info-array">
+          <div class="content-info" id="individual">
+            <div class="bedroom-photo">
+              <img src="../src/img/individual-room.jpeg" alt="">
+            </div>
+            <div class="bedroom-details">
+              <h2>Individual</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
+                sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
+                accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
+                modi. Veniam, quis consectetur! Error, blanditiis.</p>
+              <div class="icons-info">
+                <span><img src="./img/client-quantity.svg" width="32px" height="32px">1</span>
+                <span><img src="./img/bed-quantity.svg" width="32px" height="32px">1</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-info hide-panel" id="double">
+            <div class="bedroom-photo">
+              <img src="../src/img/double-room.jpg" alt="">
+            </div>
+            <div class="bedroom-details">
+              <h2>Double</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
+                sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
+                accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
+                modi. Veniam, quis consectetur! Error, blanditiis.</p>
+              <div class="icons-info">
+                <span><img src="./img/client-quantity.svg" width="32px" height="32px">2</span>
+                <span><img src="./img/bed-quantity.svg" width="32px" height="32px">1 - 2</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-info hide-panel" id="triple">
+            <div class="bedroom-photo">
+              <img src="../src/img/triple-room.jpg" alt="">
+            </div>
+            <div class="bedroom-details">
+              <h2>Triple</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
+                sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
+                accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
+                modi. Veniam, quis consectetur! Error, blanditiis.</p>
+              <div class="icons-info">
+                <span><img src="./img/client-quantity.svg" width="32px" height="32px">3</span>
+                <span><img src="./img/bed-quantity.svg" width="32px" height="32px">2 - 4</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-info hide-panel" id="quad">
+            <div class="bedroom-photo">
+              <img src="../src/img/quad-room.jpg" alt="">
+            </div>
+            <div class="bedroom-details">
+              <h2>Quad</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
+                sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
+                accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
+                modi. Veniam, quis consectetur! Error, blanditiis.</p>
+              <div class="icons-info">
+                <span><img src="./img/client-quantity.svg" width="32px" height="32px">4</span>
+                <span><img src="./img/bed-quantity.svg" width="32px" height="32px">2 - 4</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-info hide-panel" id="twin">
+            <div class="bedroom-photo">
+              <img src="../src/img/twin-room.jpg" alt="">
+            </div>
+            <div class="bedroom-details">
+              <h2>Twin</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
+                sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
+                accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
+                modi. Veniam, quis consectetur! Error, blanditiis.</p>
+              <div class="icons-info">
+                <span><img src="./img/client-quantity.svg" width="32px" height="32px">2 - 4</span>
+                <span><img src="./img/bed-quantity.svg" width="32px" height="32px">2</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-info hide-panel" id="queen">
+            <div class="bedroom-photo">
+              <img src="../src/img/queen-room.jpg" alt="">
+            </div>
+            <div class="bedroom-details">
+              <h2>Queen</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
+                sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
+                accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
+                modi. Veniam, quis consectetur! Error, blanditiis.</p>
+              <div class="icons-info">
+                <span><img src="./img/client-quantity.svg" width="32px" height="32px">1 - 2</span>
+                <span><img src="./img/bed-quantity.svg" width="32px" height="32px">1</span>
+              </div>
+            </div>
+          </div>
+          <div class="content-info hide-panel" id="king">
+            <div class="bedroom-photo">
+              <img src="../src/img/king-room.jpg" alt="">
+            </div>
+            <div class="bedroom-details">
+              <h2>King</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit explicabo, quia eos minus a
+                sit. Qui sed corporis at rerum illo porro repellendus est optio sunt impedit ad provident quae
+                accusamus dolores ducimus voluptate dolore, explicabo nam officia et molestias laudantium maxime quia
+                modi. Veniam, quis consectetur! Error, blanditiis.</p>
+              <div class="icons-info">
+                <span><img src="./img/client-quantity.svg" width="32px" height="32px">1 - 2</span>
+                <span><img src="./img/bed-quantity.svg" width="32px" height="32px">1</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <!--todo:Services section -->
@@ -206,79 +243,23 @@
           </div>
         </div>
     </div>
-  </main>
-  <div class="reservation-seccion">
-    <h2>Contact us!</h1>
-
-  </div>
-  <!--pie de pagina o footer-->
-  <footer class="footer" id="contacto">
-    <div class="container">
-      <div class="flex-footer margin_top_bottom">
-        <div class="servicio">
-          <h5 class="centro">SERVICIO GRATUITO</h5>
-          <ul class="nav-servicio">
-            <li class="item-footer">Spa y Cortes</li>
-            <li class="item-footer">Atencion Medica las 24-Hrs</li>
-            <li class="item-footer">Gimnasio por las tardes</li>
-            <li class="item-footer">Piscina</li>
-          </ul>
-        </div>
-
-
-        <div class="servicio">
-          <h5 class="centro">Terminos y Condiciones</h5>
-          <ul class="nav-servicio">
-            <li class="item-footer">Ser ordenado</li>
-            <li class="item-footer">Ser Educado con los huespedes</li>
-            <li class="item-footer">Respetar al Personal del Servicio</li>
-          </ul>
-        </div>
-
-
-        <div class="servicio">
-          <!--display block-->
-          <h5 class="centro">Contactos</h5>
-          <div class="flex-servicio-contacto">
-            <div class="contacto">
-              <img src="img/ubication.png" alt="Icono Ubicacion">
-              <a class="direccion-contacto" href="contactos.html">
-                <p>Av los Jazmines331 mz 19 lt 9</p>
-              </a>
-            </div>
-            <div class="contacto">
-              <img src="img/whatsapp.png" alt="Icono Whasaap">
-              <p>999 999 999</p>
-            </div>
-            <div class="contacto">
-              <img src="img/phone.png" alt="icono Telefono">
-              <p>5679765</p>
-            </div>
-            <div class="contacto">
-              <img src="img/email.png" alt="Icono Email">
-              <p>@micorreo.tipo</p>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="servicio">
-          <h5 class="centro">Lgotipo</h5>
-          <div class="logo-footer">
-            <!-- <img src="img/logo.svg" alt=""> -->
-          </div>
-        </div>
-      </div>
+    <div class="reservation-seccion">
+      <h2>Contact us</h1>
+      <p>MyHotels Malta Head Office : <br>
+        1 Ross Street, Paceville <br>
+        St Julians, Malta <br>
+        Tel: +356 2137 8785</p>
+        <input type="text" placeholder="Full Name">
+        <input type="text" placeholder="E-mail">
+        <input type="text" placeholder="NIC">
     </div>
-
+  </main>
+  <footer>
     <div class="derechos-reservados">
       <div class="msj-derechos">
-        <p>Copyright © <span>2020</span></p>
+        <p><span>2020</span> Copyright ©</p>
       </div>
     </div>
   </footer>
-
 </body>
-
 </html>
