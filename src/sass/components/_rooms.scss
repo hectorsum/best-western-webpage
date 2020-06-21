@@ -1,8 +1,10 @@
 .bedroom-tittle {
   text-align: center;
-  color: black;
+  color: white;
   font-size: 35px;
   font-weight: bolder;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -41,7 +43,8 @@
 
     & .navwrapper {
       // background-color: green;
-      margin-top: -1em; //To fit the nav inside of bedroom-nav
+      // margin-top: -1em; //(Bootstrap modified)
+      margin-top: 0em; //To fit the nav inside of bedroom-nav
 
       & .bed-items {
         //Aligning nav items
