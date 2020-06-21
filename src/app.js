@@ -103,3 +103,20 @@ $(function(){
   })
 })
 
+$('.reservation-wrapper-reservation').hide()
+
+$(function(){
+  $('.reservation-wrapper-details #btn-make').on('click',function(){
+    $('.reservation-wrapper-details').hide()
+    $('.reservation-wrapper-reservation').show(500)
+  })
+})
+
+$(function(){
+  $('.reservation-wrapper-reservation #btn-back').on('click',function(){
+    $('.reservation-wrapper-reservation').hide();
+    $('.reservation-wrapper-details').show(500);
+    return false
+  })
+})
+
