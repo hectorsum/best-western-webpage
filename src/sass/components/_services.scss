@@ -1,14 +1,15 @@
 .services-tittle {
   text-align: center;
-  font-size: 35px;  
+  font-size: 35px;
   font-weight: bolder;
   color: white;
   padding: 0.5em;
   margin-bottom: 1.5em;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.servicios{
-  & img{
+
+.servicios {
+  & img {
     height: 380px; //Size of every element of grid
     width: 600px;
     border-radius: $radius;
@@ -47,11 +48,90 @@
   row-gap: 50px;
   column-gap: 50px;
   padding-bottom: 70px;
-  
+
   & img {
     //To fill size of img according to grid element's size
     display: grid;
     justify-items: stretch;
     align-items: stretch;
+    width: 600px;
+    height: 380px; // 50% = 190px
+  }
+}
+
+
+
+
+//todo: celulares
+@media only screen and (max-width: 414px) {
+  .container--services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .servicios {
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      margin: 3% 0%;
+      width: 100% !important; 
+    }
+    & * {
+      //!important affects all children tags
+      width: 100% !important; 
+    }
+  }
+}
+
+//todo: tablets
+@media only screen and (max-width: 768px){
+  .container--services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .servicios {
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      margin: 3% 0%;
+      //!important affects all children tags
+      width: 100% !important; 
+    }
+  }
+}
+
+//todo: PC's
+@media only screen and (max-width: 1024px){
+  .container--services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .servicios {
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      margin: 3% 0%;
+      //!important affects all children tags
+      width: 100% !important; 
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .container--services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .servicios {
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      margin: 3% 0%;
+      //!important affects all children tags
+      width: 100% !important; 
+    }
   }
 }

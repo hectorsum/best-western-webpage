@@ -144,3 +144,9 @@
 .hide-panel{
   visibility: hidden;
 }
+
+@media only screen and (max-width: 1024px) {
+  .bedroom-details{
+    width: 100% !important;
+  }
+}

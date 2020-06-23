@@ -12,7 +12,7 @@ body {
   min-height: 100%;
 }
 
-.navbar {
+.navbar-home {
   background: transparent;
   padding: 0px;
   position: absolute;
@@ -96,8 +96,43 @@ body {
 
 
 .nav-scrolled {
-  & .navbar {
+  & .navbar-home {
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 3px 20px rgba(black, 0.2);
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:959px){ //When it hits 959px, displays the following props
+  .flex-navbar{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+}
+//todo: cellphones
+@media only screen and (max-width: 414px){
+    .flex-navbar ul .item{
+      font-size: 18px;      
+      padding: 10px 1vw;
+    }
+    .navigation{
+      padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+  .flex-navbar ul li .enlace{
+    font-size: 18px;      
+    padding: 0px;
+  }
+  .navigation{
+    padding: 5px;
   }
 }
