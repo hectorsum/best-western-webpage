@@ -1,10 +1,12 @@
+const resolve = require('path').resolve;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: './src/app.js',
     output: {
-        path: __dirname + '/build',
-        filename: 'bundle.js'
+        path: resolve('build'),
+        filename: 'bundle.js',
+        publicPath: ''
     },
     devServer:{
         port: 3000
@@ -12,30 +14,47 @@ module.exports = {
     module:{
         rules:[
             {
-                test: /\.scss$/,
+              test: /\.(js|jsx)$/,
+              exclude: /node_modules/,
+              use: {
+                loader: 'babel-loader',
+              },
+            },
+            {
+              test: /\.svg$/,
+              use: [
+                {
+                  loader: 'svg-url-loader',
+                  options: {
+                    limit: 10000,
+                  },
+                },
+              ],
+            },
+            {
+                test: /\.(s*)css$/,
                 use: [{
                         loader: MiniCssExtractPlugin.loader
                     },
-                    {
-                        loader:'css-loader'
-                    },
-                    {
-                        loader:'sass-loader'
-                    }]
+                    'css-loader',
+                    'sass-loader'
+              ]
             },
             {
                 test: /\.html$/i,
-                loader: 'html-loader',
+                use:[
+                  {
+                    loader: 'html-loader',
+                  }
+                ]
             },
             {
-                test: /\.(gif|png|jpe?g|svg)$/,
+              test: /\.(png|gif|jpg|jpe?g)$/,
                 use: [
                     {
-                        loader:'file-loader',
+                        'loader':'file-loader',
                         options:{
-                            name: '[name].[ext]',
-                            outputPath: 'img/',
-                            useRelativePath: true
+                            outputPath: './img/',
                         }
                     }
                 ]
@@ -48,7 +67,8 @@ module.exports = {
     },
     plugins:[
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            filename: 'index.html',
         }),
         new MiniCssExtractPlugin({
             filename: 'bundle.css' //Output

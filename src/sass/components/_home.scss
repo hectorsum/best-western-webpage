@@ -20,6 +20,9 @@ body {
   top: 0;
   z-index: 1;
   width: 100%;
+  & a{
+    text-decoration: none;
+  }
 }
 
 
@@ -58,7 +61,8 @@ body {
     border-bottom: 2px solid white;
     padding-bottom: 6px;
     background-color: transparent;
-    //color: #424242;
+    color: #fd7e14;
+    border-color: #fff;
   }
 }
 
@@ -66,7 +70,8 @@ body {
   //background-color: #424242;
   border-bottom: 2px solid white;
   padding-bottom: 6px;
-  color: white;
+  color: #fd7e14;
+  border-color: #fd7e14;
 }
 
 .home--paragraph {

@@ -4,11 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Best Western</title>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -32,9 +29,9 @@
             <ul class="navigation">
               <li class="item"><a class="enlace active" href="#inicio">Home</a></li>
               <li class="item"><a class="enlace" href="#nosotros">About</a></li>
-              <li class="item"><a class="enlace" href="#habitaciones">Rooms</a></li>
-              <li class="item"><a class="enlace" href="#servicios">Services</a></li>
-              <li class="item"><a class="enlace" href="#contacto">Contacts</a></li>
+              <li class="item"><a class="enlace" href="#services">Services</a></li>
+              <li class="item"><a class="enlace" href="#rooms">Rooms</a></li>
+              <li class="item"><a class="enlace" href="#contact">Contacts</a></li>
             </ul>
           </div>
         </div>
@@ -67,7 +64,7 @@
 
     <!--todo:Services section -->
 
-    <h1 class="services-tittle">Our Services</h2>
+    <h1 class="services-tittle" id="services">Our Services</h2>
       <div class="container--services">
         <div class="servicios">
           <div class="descrip-servicio">
@@ -102,7 +99,7 @@
       </div>
 
 
-      <div class="rooms">
+      <div class="rooms" id="rooms">
         <div class="bedroom-tittle">
           Our rooms
         </div>
@@ -226,10 +223,9 @@
         </div>
       </div>
 
-      <div class="reservation-wrapper" id="contact">
+      <div class="reservation-wrapper" >
         <div class="reservation-wrapper-details">
-          <h2>Contact us
-    </h1>
+          <h2>Contact us</h2>
     <p>MyHotels Malta Head Office: <br>
       1 Ross Street, Paceville <br>
       St Julians, Malta <br>
@@ -317,39 +313,39 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    // $('#check-in').datepicker({
+    //   uiLibrary: 'bootstrap4'
+    // });
+    // $('#check-out').datepicker({
+    //   uiLibrary: 'bootstrap4'
+    // });
+  
+    $(function () {
+      $('#check-in').datepicker({
+        numberOfMonths: 1,
+        dateFormat: 'DD,d MM,yy',
+        onSelect: function (selectdate) {
+          var dt = new Date(selectdate);
+          dt.setDate(dt.getDate() + 1)
+          $('#check-out').datepicker("option", "minDate", dt);
+        }
+      });
+  
+  
+      $('#check-out').datepicker({
+        numberOfMonths: 1,
+        dateFormat: 'DD,d MM,yy',
+        onSelect: function (selectdate) {
+          var dt = new Date(selectdate);
+          dt.setDate(dt.getDate() - 1)
+          $('#check-in').datepicker("option", "maxDate", dt);
+        }
+      });
+  
+    });
+  </script>
 </body>
-
-<script>
-  // $('#check-in').datepicker({
-  //   uiLibrary: 'bootstrap4'
-  // });
-  // $('#check-out').datepicker({
-  //   uiLibrary: 'bootstrap4'
-  // });
-
-  $(function () {
-    $('#check-in').datepicker({
-      numberOfMonths: 1,
-      dateFormat: 'DD,d MM,yy',
-      onSelect: function (selectdate) {
-        var dt = new Date(selectdate);
-        dt.setDate(dt.getDate() + 1)
-        $('#check-out').datepicker("option", "minDate", dt);
-      }
-    });
-
-
-    $('#check-out').datepicker({
-      numberOfMonths: 1,
-      dateFormat: 'DD,d MM,yy',
-      onSelect: function (selectdate) {
-        var dt = new Date(selectdate);
-        dt.setDate(dt.getDate() - 1)
-        $('#check-in').datepicker("option", "maxDate", dt);
-      }
-    });
-
-  });
-</script>
-
 </html>
