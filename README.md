@@ -13,6 +13,6 @@ Webpage based on Best-Western project
 ![webpack](https://img.shields.io/badge/-webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=ffffff)
 
 ### To start this project:
-` - npm install `
-` - npm run start `
+- npm install
+- npm run start 
 
