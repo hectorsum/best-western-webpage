@@ -13,7 +13,7 @@ Webpage based on Best-Western project
 ![webpack](https://img.shields.io/badge/-webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=ffffff)
 
 ### Check this out
-<https://hectorsum.github.io/webpage/>
+<https://hectorsum.github.io/best-western-webpage/>
 
 ### To start this project:
 - npm install
